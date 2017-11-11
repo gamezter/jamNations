@@ -17,7 +17,7 @@ public class Copter : MonoBehaviour {
 	void OnCollisionEnter(Collision other)
 	{
 		Debug.Log("Je touche un autre object");
-		if (other.gameObject.tag == "copter")
+		if (other.gameObject.CompareTag("copter"))
 		{
 			Debug.Log("Je touche un autre copter");
 			turnOff();
@@ -27,7 +27,7 @@ public class Copter : MonoBehaviour {
 	void OnTriggerEnter(Collision other)
 	{
 		Debug.Log("Je touche un autre object");
-		if (other.gameObject.tag == "copter")
+		if (other.gameObject.CompareTag("copter"))
 		{
 		//	if(other.gameObject.transform.parent)
 			Debug.Log("Je touche un autre copter");
