@@ -19,7 +19,13 @@ MonoBehaviour:
   leftKnee: {x: -0.83, y: 5.53}
   rightFoot: {x: 0.91, y: 0.72}
   rightKnee: {x: 0.94, y: 5.57}
-  leftArmLength: 3.4301753
-  rightArmLength: 3.2930984
-  leftLegLength: 4.810042
-  RightLegLength: 4.850093
+  midChest: 16.42
+  pelvis: 10.19
+  leftForearm: 3.4301753
+  leftArm: 4.4688478
+  rightForearm: 3.2930984
+  rightArm: 4.7273035
+  leftShin: 4.810042
+  leftThigh: 4.6630993
+  RightShin: 4.850093
+  RightThigh: 4.620389
