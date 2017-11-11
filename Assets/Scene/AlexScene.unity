@@ -417,6 +417,34 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 22de9e52645aa124bab79e5a7df9f02e, type: 2}
+    - target: {fileID: 400010, guid: 27e377a95c608b24bb4911762fd6dc7f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 27e377a95c608b24bb4911762fd6dc7f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 27e377a95c608b24bb4911762fd6dc7f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 27e377a95c608b24bb4911762fd6dc7f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 27e377a95c608b24bb4911762fd6dc7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 27e377a95c608b24bb4911762fd6dc7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 27e377a95c608b24bb4911762fd6dc7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27e377a95c608b24bb4911762fd6dc7f, type: 3}
   m_IsPrefabParent: 0
@@ -569,6 +597,27 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &201061058 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100010, guid: 27e377a95c608b24bb4911762fd6dc7f, type: 3}
+  m_PrefabInternal: {fileID: 89632740}
+--- !u!95 &201061062
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 201061058}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 94e679f98e9f74843a532dfcfc3d6620, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!4 &218518986 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: 27e377a95c608b24bb4911762fd6dc7f, type: 3}
@@ -3817,12 +3866,12 @@ GameObject:
   - component: {fileID: 1917975438}
   - component: {fileID: 1917975437}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: feu artifice de marde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1917975437
 ParticleSystemRenderer:
   serializedVersion: 4
@@ -3884,8 +3933,8 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1917975436}
   serializedVersion: 5
-  lengthInSec: 1.14
-  simulationSpeed: 1
+  lengthInSec: 10
+  simulationSpeed: 16.74
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -3944,7 +3993,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4089,7 +4138,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.69
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4333,7 +4382,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 980
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -4381,7 +4430,7 @@ ParticleSystem:
     serializedVersion: 5
     enabled: 1
     type: 4
-    angle: 4.06
+    angle: 7.51
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -4497,7 +4546,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 56.01
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4579,7 +4628,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -5207,7 +5256,7 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: -0.27
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -7246,6 +7295,7 @@ GameObject:
   - component: {fileID: 1993017394}
   - component: {fileID: 1993017393}
   - component: {fileID: 1993017392}
+  - component: {fileID: 1993017396}
   m_Layer: 0
   m_Name: paysan
   m_TagString: Untagged
@@ -7324,6 +7374,23 @@ Transform:
   m_Father: {fileID: 280198531}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -11.660001, z: 0}
+--- !u!95 &1993017396
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1993017391}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c280d3cf63a22d142bb070c8f5ec4de3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2033151060
 GameObject:
   m_ObjectHideFlags: 0
