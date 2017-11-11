@@ -5,6 +5,7 @@ using UnityEngine;
 public class Helicopter : MonoBehaviour {
 
     public Material chainMaterial;
+    public string axis;
     public float linkHeight;
     public int chainLength;
     public float linkMass;
@@ -27,8 +28,8 @@ public class Helicopter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
+        float x = Input.GetAxis(axis + "H") * 0.1f;
+        float y = Input.GetAxis(axis + "V") * 0.1f;
         transform.position += new Vector3(x, y, 0);
 
         lr.SetPosition(0, links[0].transform.position + links[0].transform.up * 1.5f);
