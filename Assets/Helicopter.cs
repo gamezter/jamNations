@@ -5,6 +5,7 @@ using UnityEngine;
 public class Helicopter : MonoBehaviour {
 
     public Material chainMaterial;
+    public bool left;
     public string axis;
     public float linkHeight;
     public int chainLength;
@@ -101,7 +102,7 @@ public class Helicopter : MonoBehaviour {
         second.axis = Vector3.forward;
         second.autoConfigureConnectedAnchor = false;
         second.connectedBody = attachee;
-        second.connectedAnchor = new Vector3(5, -15, 0);
+        second.connectedAnchor = new Vector3(left ? 5 : -5, -15, 0);
 
     }
 }
