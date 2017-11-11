@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
-  m_Name: TPose
+  m_Name: TPose 1
   m_EditorClassIdentifier: 
   leftHand: {x: -5.64, y: 9.41}
   leftElbow: {x: -4.09, y: 12.47}
