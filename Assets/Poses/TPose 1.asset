@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
+  m_Name: TPose 1
+  m_EditorClassIdentifier: 
+  leftHand: {x: -5.64, y: 9.41}
+  leftElbow: {x: -4.09, y: 12.47}
+  rightHand: {x: 5.45, y: 9.18}
+  rightElbow: {x: 4.07, y: 12.17}
+  leftFoot: {x: -0.81, y: 0.72}
+  leftKnee: {x: -0.83, y: 5.53}
+  rightFoot: {x: 0.91, y: 0.72}
+  rightKnee: {x: 0.94, y: 5.57}
