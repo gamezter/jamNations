@@ -9,19 +9,29 @@ ModelImporter:
     100002: helice_top
     100004: //RootNode
     100006: helicoptere
+    100008: helice_plane_side
+    100010: helice_plane_top
     400000: helice_side
     400002: helice_top
     400004: //RootNode
     400006: helicoptere
+    400008: helice_plane_side
+    400010: helice_plane_top
     2300000: helice_side
     2300002: helice_top
     2300004: helicoptere
+    2300006: helice_plane_side
+    2300008: helice_plane_top
     3300000: helice_side
     3300002: helice_top
     3300004: helicoptere
+    3300006: helice_plane_side
+    3300008: helice_plane_top
     4300000: helice_top
     4300002: helice_side
     4300004: helicoptere
+    4300006: helice_plane_top
+    4300008: helice_plane_side
   externalObjects:
   - first:
       type: UnityEngine:Material
