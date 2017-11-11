@@ -19,3 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -0.83, y: 5.53}
   rightFoot: {x: 0.91, y: 0.72}
   rightKnee: {x: 0.94, y: 5.57}
+  leftArmLength: 3.4301753
+  rightArmLength: 3.2930984
+  leftLegLength: 4.810042
+  RightLegLength: 4.850093
