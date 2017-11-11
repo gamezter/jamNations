@@ -583,7 +583,7 @@ MonoBehaviour:
   - {fileID: 1262760226}
   - {fileID: 1020213240}
   - {fileID: 1634761320}
-  delayAfterDancing: 5
+  delayAfterDancing: 10
 --- !u!4 &35713396
 Transform:
   m_ObjectHideFlags: 0
@@ -6450,7 +6450,7 @@ GameObject:
   - component: {fileID: 656321874}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: copter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13532,7 +13532,7 @@ GameObject:
   - component: {fileID: 1378579334}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: copter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

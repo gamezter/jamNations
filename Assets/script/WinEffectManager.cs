@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WinEffectManager : MonoBehaviour {
+public class WinEffectManager : MonoBehaviour
+{
 
 	public GameObject[] feuArtifice;
 	public GameObject[] paysan;
@@ -10,11 +11,15 @@ public class WinEffectManager : MonoBehaviour {
 
 	private void Start()
 	{
-		SuccessEffect();
+	//	SuccessEffect();
+		FailEffect();
 	}
 
 
-
+	public void FailEffect()
+	{
+		SadDude();
+	}
 
 
 
@@ -26,7 +31,7 @@ public class WinEffectManager : MonoBehaviour {
 
 	void StartFire()
 	{
-		foreach(GameObject gO in feuArtifice)
+		foreach (GameObject gO in feuArtifice)
 		{
 			gO.SetActive(false);
 			gO.SetActive(true);
@@ -37,7 +42,7 @@ public class WinEffectManager : MonoBehaviour {
 	{
 		foreach (GameObject gO in paysan)
 		{
-			gO.GetComponent<Animator>().SetBool("isHappy", true);			
+			gO.GetComponent<Animator>().SetBool("isHappy", true);
 		}
 		Invoke("StopDancing", delayAfterDancing);
 	}
@@ -51,5 +56,20 @@ public class WinEffectManager : MonoBehaviour {
 		}
 	}
 
+	void SadDude()
+	{
+		foreach (GameObject gO in paysan)
+		{
+			gO.GetComponent<Animator>().SetBool("isSad", true);
+		}
+		Invoke("StopSad", delayAfterDancing);
+	}
 
+	void StopSad()
+	{
+		foreach (GameObject gO in paysan)
+		{
+			gO.GetComponent<Animator>().SetBool("isSad", false);
+		}
+	}
 }
