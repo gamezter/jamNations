@@ -5,6 +5,7 @@ using UnityEngine;
 public class Timer : MonoBehaviour {
 
     public int stagedelay;
+    public Pose[] poses;
 
 	// Use this for initialization
 	void Start () {
