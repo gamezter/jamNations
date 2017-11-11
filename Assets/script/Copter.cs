@@ -16,15 +16,29 @@ public class Copter : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other)
 	{
-		if(other.gameObject.tag == "copter")
+		Debug.Log("Je touche un autre object");
+		if (other.gameObject.tag == "copter")
 		{
-			return;
+			Debug.Log("Je touche un autre copter");
+			turnOff();
 		}
 	}
 
+	void OnTriggerEnter(Collision other)
+	{
+		Debug.Log("Je touche un autre object");
+		if (other.gameObject.tag == "copter")
+		{
+			if(other.gameObject.transform.parent)
+			Debug.Log("Je touche un autre copter");
+			turnOff();
+		}
+	}
+
+
 	public void turnOff()
 	{
-		//GetComponent<MeshRenderer>().Enabled = false;
+		GetComponent<MeshRenderer>().enabled = false;
 
 	}
 
