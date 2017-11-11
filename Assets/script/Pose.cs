@@ -18,25 +18,25 @@ public class Pose : ScriptableObject {
     public float pelvis;
 
     [Header("Bone Lengths")]
-    public float leftForearmLength;
-    public float leftArmLength;
-    public float rightForearmLength;
-    public float rightArmLength;
-    public float leftShinLength;
-    public float leftThighLength;
-    public float RightShinLength;
-    public float RightThighLength;
+    public float leftForearm;
+    public float leftArm;
+    public float rightForearm;
+    public float rightArm;
+    public float leftShin;
+    public float leftThigh;
+    public float RightShin;
+    public float RightThigh;
 
 
     void OnValidate()
     {
-        leftForearmLength = Vector2.Distance(leftHand, leftElbow);
-        leftArmLength = Vector2.Distance(leftElbow, new Vector2(-2, midChest));
-        rightForearmLength = Vector2.Distance(rightHand, rightElbow);
-        rightArmLength = Vector2.Distance(rightElbow, new Vector2(2, midChest));
-        leftShinLength = Vector2.Distance(leftFoot, leftKnee);
-        leftThighLength = Vector2.Distance(leftKnee, new Vector2(-1, pelvis));
-        RightShinLength = Vector2.Distance(rightFoot, rightKnee);
-        RightThighLength = Vector2.Distance(rightKnee, new Vector2(1, pelvis));
+        leftForearm = Vector2.Distance(leftHand, leftElbow);
+        leftArm = Vector2.Distance(leftElbow, new Vector2(-2, midChest));
+        rightForearm = Vector2.Distance(rightHand, rightElbow);
+        rightArm = Vector2.Distance(rightElbow, new Vector2(2, midChest));
+        leftShin = Vector2.Distance(leftFoot, leftKnee);
+        leftThigh = Vector2.Distance(leftKnee, new Vector2(-1, pelvis));
+        RightShin = Vector2.Distance(rightFoot, rightKnee);
+        RightThigh = Vector2.Distance(rightKnee, new Vector2(1, pelvis));
     }
 }

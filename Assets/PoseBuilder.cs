@@ -14,7 +14,7 @@ public class PoseBuilder : MonoBehaviour {
         Gizmos.DrawLine(o + new Vector3(p.leftElbow.x, p.leftElbow.y), o + new Vector3(-2, p.midChest, 0));
         Gizmos.DrawLine(o + new Vector3(-2, p.midChest, 0), o + new Vector3(2, p.midChest, 0));
         Gizmos.DrawLine(o + new Vector3(2, p.midChest, 0), o + new Vector3(p.rightElbow.x, p.rightElbow.y, 0));
-        Gizmos.DrawLine(o + new Vector3(p.rightElbow.x, p.rightElbow.y, 0), new Vector3(p.rightHand.x, p.rightHand.y, 0));
+        Gizmos.DrawLine(o + new Vector3(p.rightElbow.x, p.rightElbow.y, 0), o + new Vector3(p.rightHand.x, p.rightHand.y, 0));
         Gizmos.DrawLine(o + new Vector3(0, p.midChest, 0), o + new Vector3(0, p.pelvis, 0));
         Gizmos.DrawLine(o + new Vector3(p.leftFoot.x, p.leftFoot.y, 0), o + new Vector3(p.leftKnee.x, p.leftKnee.y, 0));
         Gizmos.DrawLine(o + new Vector3(p.leftKnee.x, p.leftKnee.y, 0), o + new Vector3(-1, p.pelvis, 0));
