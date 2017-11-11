@@ -29,7 +29,7 @@ public class Copter : MonoBehaviour {
 		Debug.Log("Je touche un autre object");
 		if (other.gameObject.tag == "copter")
 		{
-			if(other.gameObject.transform.parent)
+		//	if(other.gameObject.transform.parent)
 			Debug.Log("Je touche un autre copter");
 			turnOff();
 		}
