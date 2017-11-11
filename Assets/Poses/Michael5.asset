@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
+  m_Name: Michael5
+  m_EditorClassIdentifier: 
+  leftHand: {x: -3.9, y: 17.09}
+  leftElbow: {x: -6, y: 14.38}
+  rightHand: {x: 1.37, y: 8.5}
+  rightElbow: {x: 2.2, y: 11.74}
+  leftFoot: {x: -1.53, y: 0.86}
+  leftKnee: {x: -1.92, y: 5.65}
+  rightFoot: {x: -1.06, y: 8.49}
+  rightKnee: {x: -5.54, y: 10.34}
+  midChest: 16.55
+  pelvis: 12.41
+  leftForearmLength: 3.4284253
+  leftArmLength: 4.550703
+  rightForearmLength: 3.3446224
+  rightArmLength: 4.8141556
+  leftShinLength: 4.8058505
+  leftThighLength: 6.822316
+  RightShinLength: 4.8469477
+  RightThighLength: 6.859774
