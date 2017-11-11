@@ -1,222 +1,181 @@
 fileFormatVersion: 2
-guid: e95f9a6559020c247b4e5a3e14f74314
-timeCreated: 1510382378
+guid: 5f26b461564606c459cdfea9fcd50507
+timeCreated: 1510386145
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: Arm_L
     100002: Arm_R
-    100004: Foot
-    100006: Foot 1
-    100008: Head
-    100010: Hip
-    100012: Leg_L
-    100014: Leg_R
-    100016: //RootNode
-    100018: Mouth
-    100020: pCube10
-    100022: pCube10 1
-    100024: pCube11
-    100026: pCube11 1
-    100028: pCube12
-    100030: pCube12 1
-    100032: pCube18
-    100034: pCube18 1
-    100036: pCube19
-    100038: pCube19 1
-    100040: pCube20
-    100042: pCube20 1
-    100044: pCube3
-    100046: pCube3 1
-    100048: pCube4
-    100050: pCube4 1
-    100052: pCylinder1
-    100054: pCylinder1 1
-    100056: pCylinder1 2
-    100058: pCylinder1 3
-    100060: pCylinder2
-    100062: pCylinder2 1
-    100064: pSphere1
-    100066: pSphere1 1
-    100068: pSphere2
-    100070: pSphere2 1
-    100072: pSphere3
-    100074: pSphere3 1
-    100076: pSphere4
-    100078: pSphere4 1
-    100080: Toe
-    100082: Toe 1
-    100084: Torso
-    100086: Trunk
+    100004: ElbowNail_L
+    100006: ElbowNail_R
+    100008: Finger1_L
+    100010: Finger1_R
+    100012: Finger2_L
+    100014: Finger2_R
+    100016: Finger3_L
+    100018: Finger3_R
+    100020: Finger4_L
+    100022: Finger4_R
+    100024: Foot_L
+    100026: Foot_R
+    100028: Forearm_L
+    100030: Forearm_R
+    100032: Head
+    100034: Hip
+    100036: Hip2_L
+    100038: Hip2_R
+    100040: Knee_L
+    100042: Knee_R
+    100044: Leg_L
+    100046: Leg_R
+    100048: //RootNode
+    100050: Mouth
+    100052: Shoulder_L
+    100054: Shoulder_R
+    100056: Tibia_L
+    100058: Tibia_R
+    100060: Toe_L
+    100062: Toe_R
+    100064: Torso
+    100066: Trunk
     400000: Arm_L
     400002: Arm_R
-    400004: Foot
-    400006: Foot 1
-    400008: Head
-    400010: Hip
-    400012: Leg_L
-    400014: Leg_R
-    400016: //RootNode
-    400018: Mouth
-    400020: pCube10
-    400022: pCube10 1
-    400024: pCube11
-    400026: pCube11 1
-    400028: pCube12
-    400030: pCube12 1
-    400032: pCube18
-    400034: pCube18 1
-    400036: pCube19
-    400038: pCube19 1
-    400040: pCube20
-    400042: pCube20 1
-    400044: pCube3
-    400046: pCube3 1
-    400048: pCube4
-    400050: pCube4 1
-    400052: pCylinder1
-    400054: pCylinder1 1
-    400056: pCylinder1 2
-    400058: pCylinder1 3
-    400060: pCylinder2
-    400062: pCylinder2 1
-    400064: pSphere1
-    400066: pSphere1 1
-    400068: pSphere2
-    400070: pSphere2 1
-    400072: pSphere3
-    400074: pSphere3 1
-    400076: pSphere4
-    400078: pSphere4 1
-    400080: Toe
-    400082: Toe 1
-    400084: Torso
-    400086: Trunk
-    2100000: lambert1
-    2300000: Foot
-    2300002: Foot 1
-    2300004: Head
-    2300006: Hip
-    2300008: Mouth
-    2300010: pCube10
-    2300012: pCube10 1
-    2300014: pCube11
-    2300016: pCube11 1
-    2300018: pCube12
-    2300020: pCube12 1
-    2300022: pCube18
-    2300024: pCube18 1
-    2300026: pCube19
-    2300028: pCube19 1
-    2300030: pCube20
-    2300032: pCube20 1
-    2300034: pCube3
-    2300036: pCube3 1
-    2300038: pCube4
-    2300040: pCube4 1
-    2300042: pCylinder1
-    2300044: pCylinder1 1
-    2300046: pCylinder1 2
-    2300048: pCylinder1 3
-    2300050: pCylinder2
-    2300052: pCylinder2 1
-    2300054: pSphere1
-    2300056: pSphere1 1
-    2300058: pSphere2
-    2300060: pSphere2 1
-    2300062: pSphere3
-    2300064: pSphere3 1
-    2300066: pSphere4
-    2300068: pSphere4 1
-    2300070: Toe
-    2300072: Toe 1
-    2300074: Torso
-    2300076: Trunk
-    3300000: Foot
-    3300002: Foot 1
-    3300004: Head
-    3300006: Hip
-    3300008: Mouth
-    3300010: pCube10
-    3300012: pCube10 1
-    3300014: pCube11
-    3300016: pCube11 1
-    3300018: pCube12
-    3300020: pCube12 1
-    3300022: pCube18
-    3300024: pCube18 1
-    3300026: pCube19
-    3300028: pCube19 1
-    3300030: pCube20
-    3300032: pCube20 1
-    3300034: pCube3
-    3300036: pCube3 1
-    3300038: pCube4
-    3300040: pCube4 1
-    3300042: pCylinder1
-    3300044: pCylinder1 1
-    3300046: pCylinder1 2
-    3300048: pCylinder1 3
-    3300050: pCylinder2
-    3300052: pCylinder2 1
-    3300054: pSphere1
-    3300056: pSphere1 1
-    3300058: pSphere2
-    3300060: pSphere2 1
-    3300062: pSphere3
-    3300064: pSphere3 1
-    3300066: pSphere4
-    3300068: pSphere4 1
-    3300070: Toe
-    3300072: Toe 1
-    3300074: Torso
-    3300076: Trunk
-    4300000: Head
-    4300002: Mouth
-    4300004: Torso
-    4300006: Hip
-    4300008: Trunk
-    4300010: pSphere3
-    4300012: pCylinder1
-    4300014: pCube3
-    4300016: pCube4
-    4300018: pCube12
-    4300020: pCube18
-    4300022: pCube19
-    4300024: pCube20
-    4300026: pSphere4
-    4300028: pCylinder1
-    4300030: pSphere2
-    4300032: pCube10
-    4300034: pSphere1
-    4300036: pCylinder2
-    4300038: pCube11
-    4300040: Toe
-    4300042: Foot
-    4300044: pSphere3
-    4300046: pCylinder1
-    4300048: pCube3
-    4300050: pCube4
-    4300052: pCube12
-    4300054: pCube18
-    4300056: pCube19
-    4300058: pCube20
-    4300060: pSphere4
-    4300062: pCylinder1
-    4300064: pSphere2
-    4300066: pCube10
-    4300068: pSphere1
-    4300070: pCylinder2
-    4300072: pCube11
-    4300074: Toe
-    4300076: Foot
-  externalObjects: {}
+    400004: ElbowNail_L
+    400006: ElbowNail_R
+    400008: Finger1_L
+    400010: Finger1_R
+    400012: Finger2_L
+    400014: Finger2_R
+    400016: Finger3_L
+    400018: Finger3_R
+    400020: Finger4_L
+    400022: Finger4_R
+    400024: Foot_L
+    400026: Foot_R
+    400028: Forearm_L
+    400030: Forearm_R
+    400032: Head
+    400034: Hip
+    400036: Hip2_L
+    400038: Hip2_R
+    400040: Knee_L
+    400042: Knee_R
+    400044: Leg_L
+    400046: Leg_R
+    400048: //RootNode
+    400050: Mouth
+    400052: Shoulder_L
+    400054: Shoulder_R
+    400056: Tibia_L
+    400058: Tibia_R
+    400060: Toe_L
+    400062: Toe_R
+    400064: Torso
+    400066: Trunk
+    2300000: Arm_L
+    2300002: Arm_R
+    2300004: ElbowNail_L
+    2300006: ElbowNail_R
+    2300008: Finger1_L
+    2300010: Finger1_R
+    2300012: Finger2_L
+    2300014: Finger2_R
+    2300016: Finger3_L
+    2300018: Finger3_R
+    2300020: Finger4_L
+    2300022: Finger4_R
+    2300024: Foot_L
+    2300026: Foot_R
+    2300028: Forearm_L
+    2300030: Forearm_R
+    2300032: Head
+    2300034: Hip
+    2300036: Hip2_L
+    2300038: Hip2_R
+    2300040: Knee_L
+    2300042: Knee_R
+    2300044: Leg_L
+    2300046: Leg_R
+    2300048: Mouth
+    2300050: Shoulder_L
+    2300052: Shoulder_R
+    2300054: Tibia_L
+    2300056: Tibia_R
+    2300058: Toe_L
+    2300060: Toe_R
+    2300062: Torso
+    2300064: Trunk
+    3300000: Arm_L
+    3300002: Arm_R
+    3300004: ElbowNail_L
+    3300006: ElbowNail_R
+    3300008: Finger1_L
+    3300010: Finger1_R
+    3300012: Finger2_L
+    3300014: Finger2_R
+    3300016: Finger3_L
+    3300018: Finger3_R
+    3300020: Finger4_L
+    3300022: Finger4_R
+    3300024: Foot_L
+    3300026: Foot_R
+    3300028: Forearm_L
+    3300030: Forearm_R
+    3300032: Head
+    3300034: Hip
+    3300036: Hip2_L
+    3300038: Hip2_R
+    3300040: Knee_L
+    3300042: Knee_R
+    3300044: Leg_L
+    3300046: Leg_R
+    3300048: Mouth
+    3300050: Shoulder_L
+    3300052: Shoulder_R
+    3300054: Tibia_L
+    3300056: Tibia_R
+    3300058: Toe_L
+    3300060: Toe_R
+    3300062: Torso
+    3300064: Trunk
+    4300000: Torso
+    4300002: Head
+    4300004: Mouth
+    4300006: Trunk
+    4300008: Hip
+    4300010: Hip2_L
+    4300012: Leg_L
+    4300014: Knee_L
+    4300016: Tibia_L
+    4300018: Foot_L
+    4300020: Toe_L
+    4300022: Hip2_R
+    4300024: Leg_R
+    4300026: Knee_R
+    4300028: Tibia_R
+    4300030: Foot_R
+    4300032: Toe_R
+    4300034: Shoulder_R
+    4300036: Arm_R
+    4300038: ElbowNail_R
+    4300040: Forearm_R
+    4300042: Finger1_R
+    4300044: Finger2_R
+    4300046: Finger3_R
+    4300048: Finger4_R
+    4300050: Shoulder_L
+    4300052: Arm_L
+    4300054: ElbowNail_L
+    4300056: Forearm_L
+    4300058: Finger1_L
+    4300060: Finger2_L
+    4300062: Finger3_L
+    4300064: Finger4_L
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -229,7 +188,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -254,8 +212,6 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
