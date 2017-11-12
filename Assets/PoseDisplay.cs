@@ -75,14 +75,16 @@ public class PoseDisplay : MonoBehaviour {
 
     public void UpdateDisplay(Pose p)
     {
-        leftArm.SetPositions(new[] { new Vector3(p.leftHand.x, p.leftHand.y, depth), new Vector3(p.leftElbow.x, p.leftElbow.y, depth), new Vector3(-2, p.midChest, depth), new Vector3(0, p.midChest, depth) });
+        Vector3 o = transform.position;    
 
-        rightArm.SetPositions(new[] { new Vector3(p.rightHand.x, p.rightHand.y, depth), new Vector3(p.rightElbow.x, p.rightElbow.y, depth), new Vector3(2, p.midChest, depth), new Vector3(0, p.midChest, depth) });
+        leftArm.SetPositions(new[] { o + new Vector3(p.leftHand.x, p.leftHand.y, 0), o + new Vector3(p.leftElbow.x, p.leftElbow.y, 0), o + new Vector3(-2, p.midChest, 0), o + new Vector3(0, p.midChest, 0) });
 
-        leftLeg.SetPositions(new[] { new Vector3(p.leftFoot.x, p.leftFoot.y, depth), new Vector3(p.leftKnee.x, p.leftKnee.y, depth), new Vector3(0, p.pelvis, depth) });
+        rightArm.SetPositions(new[] { o + new Vector3(p.rightHand.x, p.rightHand.y, 0), o + new Vector3(p.rightElbow.x, p.rightElbow.y, 0), o + new Vector3(2, p.midChest, 0), o + new Vector3(0, p.midChest, 0) });
 
-        rightLeg.SetPositions(new[] { new Vector3(p.rightFoot.x, p.rightFoot.y, depth), new Vector3(p.rightKnee.x, p.rightKnee.y, depth), new Vector3(0, p.pelvis, depth) });
+        leftLeg.SetPositions(new[] { o + new Vector3(p.leftFoot.x, p.leftFoot.y, 0), o + new Vector3(p.leftKnee.x, p.leftKnee.y, 0), o + new Vector3(0, p.pelvis, 0) });
 
-        Body.SetPositions(new[] { new Vector3(0, p.pelvis, depth), new Vector3(0, p.midChest, depth) });
+        rightLeg.SetPositions(new[] { o + new Vector3(p.rightFoot.x, p.rightFoot.y, 0), o + new Vector3(p.rightKnee.x, p.rightKnee.y, 0), o + new Vector3(0, p.pelvis, 0) });
+
+        Body.SetPositions(new[] { o + new Vector3(0, p.pelvis, 0), o + new Vector3(0, p.midChest, 0) });
     }
 }
