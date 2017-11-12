@@ -15,7 +15,7 @@ public class Helicopter : MonoBehaviour {
     public Rigidbody attachee;
     private List<GameObject> links;
     private LineRenderer lr;
-
+	public bool isDead;
 	// Use this for initialization
 	void Start () {
         links = new List<GameObject>();
@@ -29,6 +29,9 @@ public class Helicopter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (!isDead)
+		{
+				
         float x = Input.GetAxis(axis + "H") * 0.1f;
         float y = Input.GetAxis(axis + "V") * 0.1f;
         transform.position += new Vector3(x, y, 0);
@@ -51,9 +54,10 @@ public class Helicopter : MonoBehaviour {
         lr.SetPosition(chainLength * 2, p0 * 0.33f + p1 * 0.66f);
 
         lr.SetPosition(chainLength * 2 + 1, links[links.Count - 1].transform.position - links[links.Count - 1].transform.up * 1.5f);
+		}
 	}
 
-    void BuildChain()
+	void BuildChain()
     {
         GameObject last = null;
         JointLimits l = new JointLimits { min = -90, max = 90 };
