@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 2d52279a187a2d54aa6e5bbc86d9953c
+timeCreated: 1510462011
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Our Gang NF
+  fontNames:
+  - Our Gang NF
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
