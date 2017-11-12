@@ -15,10 +15,10 @@ MonoBehaviour:
   leftElbow: {x: -6, y: -0.62}
   rightHand: {x: 1.37, y: -6.5}
   rightElbow: {x: 2.2, y: -3.26}
-  leftFoot: {x: -1.53, y: -14.14}
-  leftKnee: {x: -1.92, y: -9.35}
-  rightFoot: {x: -1.06, y: -6.51}
-  rightKnee: {x: -5.54, y: -4.66}
+  leftFoot: {x: -3, y: -11.78}
+  leftKnee: {x: -6.37, y: -8.24}
+  rightFoot: {x: 1.68, y: -15.46}
+  rightKnee: {x: 0.18, y: -10.82}
   poseName: '"The m''lady"'
   midChest: 1.55
   pelvis: -4
@@ -27,7 +27,7 @@ MonoBehaviour:
   leftArm: 4.5507035
   rightForearm: 3.3446226
   rightArm: 4.814156
-  leftShin: 4.8058505
-  leftThigh: 5.428527
-  RightShin: 4.8469477
-  RightThigh: 6.5732183
+  leftShin: 4.887586
+  leftThigh: 6.842112
+  RightShin: 4.8764334
+  RightThigh: 6.869119

@@ -15,10 +15,10 @@ MonoBehaviour:
   leftElbow: {x: -6.4, y: 2.86}
   rightHand: {x: 10.06, y: 3.49}
   rightElbow: {x: 6.8, y: 2.64}
-  leftFoot: {x: 1.85, y: -13.96}
-  leftKnee: {x: 0.61, y: -9.28}
-  rightFoot: {x: 2.57, y: -14.11}
-  rightKnee: {x: 2.07, y: -9.32}
+  leftFoot: {x: -2.38, y: -15.34}
+  leftKnee: {x: -0.57, y: -10.84}
+  rightFoot: {x: 2.57, y: -15.67}
+  rightKnee: {x: 2.07, y: -10.8}
   poseName: '"The Dab"'
   midChest: 1.55
   pelvis: -4
@@ -27,7 +27,7 @@ MonoBehaviour:
   leftArm: 4.5908713
   rightForearm: 3.3689911
   rightArm: 4.922205
-  leftShin: 4.8414874
-  leftThigh: 5.5200086
-  RightShin: 4.8160253
-  RightThigh: 5.426536
+  leftShin: 4.8503714
+  leftThigh: 6.8535028
+  RightShin: 4.8956
+  RightThigh: 6.8836694

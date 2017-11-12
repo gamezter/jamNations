@@ -17,8 +17,8 @@ MonoBehaviour:
   rightElbow: {x: 4.6, y: -2.54}
   leftFoot: {x: -5.45, y: -13.25}
   leftKnee: {x: -4.37, y: -8.57}
-  rightFoot: {x: -0.7, y: -14.11}
-  rightKnee: {x: -0.68, y: -9.27}
+  rightFoot: {x: -0.7, y: -15.3}
+  rightKnee: {x: 1.2, y: -10.8}
   poseName: '"La prise du petit paquet"'
   midChest: 1.55
   pelvis: -4
@@ -29,5 +29,5 @@ MonoBehaviour:
   rightArm: 4.846452
   leftShin: 4.8029995
   leftThigh: 5.678186
-  RightShin: 4.8400407
-  RightThigh: 5.5313025
+  RightShin: 4.88467
+  RightThigh: 6.802941
