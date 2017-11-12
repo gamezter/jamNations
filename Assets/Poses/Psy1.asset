@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
+  m_Name: Psy1
+  m_EditorClassIdentifier: 
+  leftHand: {x: -1.2, y: 11.44}
+  leftElbow: {x: -3.34, y: 12.2}
+  rightHand: {x: 1.4, y: 11.8}
+  rightElbow: {x: 4.63, y: 12.46}
+  leftFoot: {x: -6.21, y: 2.47}
+  leftKnee: {x: -5.55, y: 7.24}
+  rightFoot: {x: 3.24, y: 1.03}
+  rightKnee: {x: 2.81, y: 5.83}
+  midChest: 16.55
+  pelvis: 12.41
+  leftForearm: 2.270947
+  leftArm: 4.5517135
+  rightForearm: 3.2967408
+  rightArm: 4.862612
+  leftShin: 4.8154435
+  leftThigh: 6.8870463
+  RightShin: 4.819222
+  RightThigh: 6.8244047
