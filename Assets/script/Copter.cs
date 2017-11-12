@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Copter : MonoBehaviour {
 
+	public ParticleSystem myParticuleSystem;
 	public float timerBeforeResurect = 5;
 	//public MeshRenderer myParent;
 	public Helicopter myHelicopter;
@@ -14,10 +15,10 @@ public class Copter : MonoBehaviour {
 		{
 			if(other.gameObject.transform.parent != transform.parent)
 			{
-                Copter c = other.gameObject.GetComponent<Copter>();
 
+				Instantiate(myParticuleSystem, transform.position, transform.rotation);
+				Copter c = other.gameObject.GetComponent<Copter>();
                 other.gameObject.GetComponent<BoxCollider>().enabled = false;
-				//transform.parent.GetComponent<BoxCollider>().enabled = false;
 				MeshRenderer[] tempMR = transform.parent.GetComponentsInChildren<MeshRenderer>();
 				foreach (MeshRenderer tMR in tempMR)
 				{
@@ -25,11 +26,9 @@ public class Copter : MonoBehaviour {
 				}
 				Invoke("Ressurect", timerBeforeResurect);
 				c.Invoke("Ressurect", timerBeforeResurect);
-
+				GetComponent<AudioSource>().Play();
 				myHelicopter.isDead = true;				
 				c.myHelicopter.isDead = true;
-              //  myParent.enabled = false;
-              //  c.myParent.enabled = false;
 			}	
 		}
 	}
