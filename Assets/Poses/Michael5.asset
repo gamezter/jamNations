@@ -11,23 +11,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
   m_Name: Michael5
   m_EditorClassIdentifier: 
-  leftHand: {x: -3.9, y: 2.09}
+  leftHand: {x: -7.06, y: 2.52}
   leftElbow: {x: -6, y: -0.62}
   rightHand: {x: 1.37, y: -6.5}
   rightElbow: {x: 2.2, y: -3.26}
-  leftFoot: {x: -3, y: -11.78}
-  leftKnee: {x: -6.37, y: -8.24}
+  leftFoot: {x: -9.36, y: -11.78}
+  leftKnee: {x: -6.21, y: -8.24}
   rightFoot: {x: 1.68, y: -15.46}
   rightKnee: {x: 0.18, y: -10.82}
   poseName: '"The m''lady"'
   midChest: 1.55
   pelvis: -4
   rotation: 0
-  leftForearm: 3.4284253
+  leftForearm: 3.314091
   leftArm: 4.5507035
   rightForearm: 3.3446226
   rightArm: 4.814156
-  leftShin: 4.887586
-  leftThigh: 6.842112
+  leftShin: 4.7385755
+  leftThigh: 6.717269
   RightShin: 4.8764334
   RightThigh: 6.869119

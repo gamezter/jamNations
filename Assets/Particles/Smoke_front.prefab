@@ -51,7 +51,7 @@ ParticleSystem:
   lengthInSec: 5
   simulationSpeed: 1
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -100,7 +100,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1586061049
+  randomSeed: -1907832932
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -1003,7 +1003,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 0}
-        key1: {r: 1, g: 1, b: 1, a: 0.41960785}
+        key1: {r: 1, g: 1, b: 1, a: 0.9019608}
         key2: {r: 0, g: 0, b: 0, a: 0.9843137}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1019,7 +1019,7 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 4433
+        atime1: 6554
         atime2: 60138
         atime3: 65535
         atime4: 0

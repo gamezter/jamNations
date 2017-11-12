@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
   m_Name: Psy2
   m_EditorClassIdentifier: 
-  leftHand: {x: -4.3, y: 3.33}
+  leftHand: {x: -8.49, y: 3.33}
   leftElbow: {x: -6.4, y: 0.55}
   rightHand: {x: 4.06, y: -5.54}
   rightElbow: {x: 5.11, y: -2.21}
@@ -23,7 +23,7 @@ MonoBehaviour:
   midChest: 1.55
   pelvis: -4
   rotation: 0
-  leftForearm: 3.4840205
+  leftForearm: 3.478002
   leftArm: 4.5122056
   rightForearm: 3.4916184
   rightArm: 4.8795185
