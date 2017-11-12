@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
+  m_Name: breakdance5
+  m_EditorClassIdentifier: 
+  leftHand: {x: -8.58, y: 5.68}
+  leftElbow: {x: -6.66, y: 2.76}
+  rightHand: {x: 3.37, y: 8.88}
+  rightElbow: {x: 4.46, y: 5.68}
+  leftFoot: {x: -2.4, y: -14.58}
+  leftKnee: {x: -4.14, y: -10.02}
+  rightFoot: {x: -0.9, y: -12.97}
+  rightKnee: {x: 3.25, y: -10.4}
+  midChest: 1.55
+  pelvis: -4
+  rotation: -0.85
+  leftForearm: 3.4946816
+  leftArm: 4.81453
+  rightForearm: 3.3805478
+  rightArm: 4.8071303
+  leftShin: 4.880696
+  leftThigh: 6.7896986
+  RightShin: 4.8813324
+  RightThigh: 6.783988
