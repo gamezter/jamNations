@@ -15,10 +15,10 @@ MonoBehaviour:
   leftElbow: {x: -3.9, y: 5.7}
   rightHand: {x: 8.5, y: 6.56}
   rightElbow: {x: 5.85, y: 4.45}
-  leftFoot: {x: 0.76, y: -13.99}
-  leftKnee: {x: -0.14, y: -9.22}
-  rightFoot: {x: -0.75, y: -14.05}
-  rightKnee: {x: -0.1, y: -9.34}
+  leftFoot: {x: -4.21, y: -14.93}
+  leftKnee: {x: -2.11, y: -10.51}
+  rightFoot: {x: 4.25, y: -15.09}
+  rightKnee: {x: 2.2, y: -10.73}
   poseName: '"The Shamon"'
   midChest: 1.55
   pelvis: -4
@@ -27,7 +27,7 @@ MonoBehaviour:
   leftArm: 4.564263
   rightForearm: 3.387418
   rightArm: 4.82001
-  leftShin: 4.8541627
-  leftThigh: 5.290369
-  RightShin: 4.7546396
-  RightThigh: 5.452119
+  leftShin: 4.893506
+  leftThigh: 6.6039534
+  RightShin: 4.8178945
+  RightThigh: 6.8361464
