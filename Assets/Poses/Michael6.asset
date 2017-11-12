@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -0.19, y: -9.45}
   rightFoot: {x: 3.14, y: -13.92}
   rightKnee: {x: 3.01, y: -9.06}
+  poseName: '"The Toreador"'
   midChest: 1.55
   pelvis: -4
   rotation: 0
