@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scene/alexCscene.unity
     guid: f50d80f6497fc4f44a12e3ed82e7aa6b
+  - enabled: 1
+    path: Assets/Scene/Credit.unity
+    guid: 92cdf98f49e5bff4f9294763422374b7
