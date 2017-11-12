@@ -17,6 +17,7 @@ public class Helicopter : MonoBehaviour {
     private LineRenderer lr;
 	public bool isDead;
 
+	public float speed = 0.4f;
 
     float topY;
     float bottomY;
@@ -48,8 +49,8 @@ public class Helicopter : MonoBehaviour {
 	void Update () {
         if (isDead) return;
 	
-        float x = Input.GetAxis(axis + "H") * 0.1f;
-        float y = Input.GetAxis(axis + "V") * 0.1f;
+        float x = Input.GetAxis(axis + "H") */* 0.1f*/ speed;
+        float y = Input.GetAxis(axis + "V") * /*0.1f*/ speed;
         Vector3 newPos = transform.position + new Vector3(x, y, 0);
         if (newPos.x < leftX) newPos.x = leftX;
         if (newPos.x > rightX) newPos.x = rightX;
