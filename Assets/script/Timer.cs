@@ -98,10 +98,11 @@ public class Timer : MonoBehaviour {
       //      score += Mathf.Max(100 - (rightKnee - rightKneeTarget.transform.position + parent.transform.position).magnitude * 50 / maxDistance, 0.0f);
             score += Mathf.Max(100 - (rightFoot - rightFootTarget.transform.position + parent.transform.position).magnitude * 100 / maxDistance, 0.0f);
 
-            score /= 8;
+            score /= 4;
             TotalScore += score;
-
-            if(score < 50)
+            Debug.Log("Score :" + score.ToString());
+           // Debug.Log("je suis poche jai pas un bon score");
+            if (score < 13)
             {
 				Debug.Log("je suis poche jai pas un bon score");
                 switch (lives)
@@ -128,9 +129,14 @@ public class Timer : MonoBehaviour {
                         break;
                 }
             }
-            else if(score > 60)
+            else/* if(score > 13)*/
             {
-				myRadio.Play();
+                Debug.Log("On as eu du score");
+                foule1.SetBool("Happy", true);
+                foule2.SetBool("Happy", true);
+                foule3.SetBool("Happy", true);
+                Debug.Log("juste apres les bool a on");
+                myRadio.Play();
                 switch (lives)
                 {
 					case 3:
@@ -152,9 +158,7 @@ public class Timer : MonoBehaviour {
                         lives++;
                         break;
                 }
-				foule1.SetBool("Happy", false);
-				foule2.SetBool("Happy", false);
-				foule3.SetBool("Happy", false);
+                Invoke("ResetBoolHappy", 3f);
 			}
 
             currentIndex = currentIndex == poses.Length - 1 ? 0 : currentIndex + 1;
@@ -172,4 +176,13 @@ public class Timer : MonoBehaviour {
             MoveName.text = poses[currentIndex].poseName;
         }
 	}
+
+    private void ResetBoolHappy()
+    {
+        	foule1.SetBool("Happy", false);
+        	foule2.SetBool("Happy", false);
+        	foule3.SetBool("Happy", false);
+    }
+
+
 }

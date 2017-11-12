@@ -26,7 +26,10 @@ public class Copter : MonoBehaviour {
 				}
 				Invoke("Ressurect", timerBeforeResurect);
 				c.Invoke("Ressurect", timerBeforeResurect);
-				GetComponent<AudioSource>().Play();
+                if (GetComponent<AudioSource>() != null) {
+
+                    GetComponent<AudioSource>().Play();
+                }
 				myHelicopter.isDead = true;				
 				c.myHelicopter.isDead = true;
 			}	

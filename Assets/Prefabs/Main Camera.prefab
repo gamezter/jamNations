@@ -675,7 +675,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 255573186bd96a146b196a7f77ef0205, type: 2}
   - {fileID: 11400000, guid: fdba26fd8a365614c8bed7ee03ac0f6a, type: 2}
   - {fileID: 11400000, guid: 814cef483d6f95e4ca7e21531a827e2c, type: 2}
-  maxDistance: 20
+  maxDistance: 18
   score: 0
   MoveName: {fileID: 114632600309033624}
   bubbles:
