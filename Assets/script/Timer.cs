@@ -72,7 +72,7 @@ public class Timer : MonoBehaviour {
         if (delay < 0)
         {
             //times up
-            if (stagedelay > 3.0) stagedelay -= 0.5f;
+            if (stagedelay > 3.0) stagedelay -= 1f;
             delay = stagedelay;
 
             score = 0;
