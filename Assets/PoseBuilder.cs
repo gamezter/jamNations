@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PoseBuilder : MonoBehaviour {
 
@@ -32,14 +30,4 @@ public class PoseBuilder : MonoBehaviour {
         Gizmos.DrawSphere(o + new Vector3(p.rightKnee.x, p.rightKnee.y, 0), 0.5f);
         Gizmos.DrawSphere(o + new Vector3(p.rightFoot.x, p.rightFoot.y, 0), 0.5f);
     }
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
