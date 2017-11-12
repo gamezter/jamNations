@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -1.11, y: -9.42}
   rightFoot: {x: 3.22, y: -14.06}
   rightKnee: {x: 2.08, y: -9.36}
+  poseName: '"The Hodor"'
   midChest: 1.55
   pelvis: -4
   rotation: 0

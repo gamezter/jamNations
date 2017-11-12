@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -1.2, y: -10.88}
   rightFoot: {x: 10.99, y: -10.14}
   rightKnee: {x: 6.94, y: -7.4}
+  poseName: '"The BBoy"'
   midChest: 1.55
   pelvis: -4
   rotation: 9.99

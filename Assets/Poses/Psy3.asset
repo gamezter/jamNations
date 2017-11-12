@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -5.72, y: -7.55}
   rightFoot: {x: 4.56, y: -11.07}
   rightKnee: {x: 6.54, y: -6.6}
+  poseName: '"..Style"'
   midChest: 1.55
   pelvis: -4
   rotation: 0

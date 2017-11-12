@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -1.92, y: -9.35}
   rightFoot: {x: -1.06, y: -6.51}
   rightKnee: {x: -5.54, y: -4.66}
+  poseName: '"The m''lady"'
   midChest: 1.55
   pelvis: -4
   rotation: 0

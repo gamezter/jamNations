@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -1.2, y: -10.88}
   rightFoot: {x: 0.53, y: -15.66}
   rightKnee: {x: 0.86, y: -10.84}
+  poseName: '"The A"'
   midChest: 1.55
   pelvis: -4
   rotation: 0

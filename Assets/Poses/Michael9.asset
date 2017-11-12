@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -6.01, y: -7.22}
   rightFoot: {x: -6.81, y: -10.54}
   rightKnee: {x: -2.31, y: -8.58}
+  poseName: '"The Light like Feather"'
   midChest: 1.55
   pelvis: -4
   rotation: 0

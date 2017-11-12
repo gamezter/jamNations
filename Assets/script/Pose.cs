@@ -14,6 +14,8 @@ public class Pose : ScriptableObject {
     public Vector2 rightFoot;   
     public Vector2 rightKnee;
 
+    public string poseName;
+
     public float midChest;
     public float pelvis;
 

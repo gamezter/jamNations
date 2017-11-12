@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -5.55, y: -7.76}
   rightFoot: {x: 3.24, y: -13.97}
   rightKnee: {x: 2.81, y: -9.17}
+  poseName: '"gang.."'
   midChest: 1.55
   pelvis: -4
   rotation: 0

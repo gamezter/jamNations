@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -2.27, y: -9.28}
   rightFoot: {x: 3.26, y: -6.65}
   rightKnee: {x: 7.14, y: -4.52}
+  poseName: '"The Yee Haw"'
   midChest: 1.55
   pelvis: -4
   rotation: 0

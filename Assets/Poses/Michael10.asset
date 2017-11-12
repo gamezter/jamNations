@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: 0.61, y: -9.28}
   rightFoot: {x: 2.57, y: -14.11}
   rightKnee: {x: 2.07, y: -9.32}
+  poseName: '"The Dab"'
   midChest: 1.55
   pelvis: -4
   rotation: 0

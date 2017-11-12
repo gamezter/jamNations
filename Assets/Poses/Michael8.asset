@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: 0.35, y: -9.32}
   rightFoot: {x: 0.59, y: -13.95}
   rightKnee: {x: 2.22, y: -9.37}
+  poseName: '"The Hip Thrust"'
   midChest: 1.55
   pelvis: -4
   rotation: 0
