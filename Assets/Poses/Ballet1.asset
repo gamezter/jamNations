@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
+  m_Name: Ballet1
+  m_EditorClassIdentifier: 
+  leftHand: {x: -9.24, y: 3.97}
+  leftElbow: {x: -6.54, y: 1.85}
+  rightHand: {x: 3.81, y: 8.49}
+  rightElbow: {x: 1.44, y: 6.37}
+  leftFoot: {x: -3.82, y: -15.1}
+  leftKnee: {x: -3.6, y: -10.29}
+  rightFoot: {x: 9.34, y: -0.81}
+  rightKnee: {x: 7.32, y: -5.21}
+  poseName: '"Les Grand Ballets"'
+  midChest: 1.55
+  pelvis: -4
+  rotation: 0
+  leftForearm: 3.432841
+  leftArm: 4.549901
+  rightForearm: 3.1798267
+  rightArm: 4.8524218
+  leftShin: 4.815029
+  leftThigh: 6.806181
+  RightShin: 4.841529
+  RightThigh: 6.434788

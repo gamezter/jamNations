@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
+  m_Name: ecartelement
+  m_EditorClassIdentifier: 
+  leftHand: {x: -8.28, y: 6.45}
+  leftElbow: {x: -5.54, y: 4.38}
+  rightHand: {x: 8.67, y: 6.03}
+  rightElbow: {x: 6.06, y: 4.13}
+  leftFoot: {x: -11.26, y: -9.43}
+  leftKnee: {x: -6.87, y: -7.44}
+  rightFoot: {x: 10.88, y: -10.22}
+  rightKnee: {x: 6.92, y: -7.41}
+  poseName: '"The Star"'
+  midChest: 1.55
+  pelvis: -4
+  rotation: 0
+  leftForearm: 3.4340205
+  leftArm: 4.532163
+  rightForearm: 3.228328
+  rightArm: 4.8104057
+  leftShin: 4.8199797
+  leftThigh: 6.8037124
+  RightShin: 4.8556876
+  RightThigh: 6.831874
