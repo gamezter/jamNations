@@ -42,7 +42,7 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 1.69
+      intensity: 1.4
       radius: 0.4
       sampleCount: 10
       downsampling: 1
@@ -72,8 +72,8 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       focusDistance: 10
-      aperture: 5.6
-      focalLength: 50
+      aperture: 1.9
+      focalLength: 49
       useCameraFov: 0
       kernelSize: 1
   motionBlur:
@@ -125,7 +125,7 @@ MonoBehaviour:
         tint: 4
         hueShift: 0
         saturation: 1.06
-        contrast: 1
+        contrast: 0.972
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}
@@ -135,7 +135,7 @@ MonoBehaviour:
         mode: 1
         log:
           slope: {r: 1, g: 1, b: 1, a: 0}
-          power: {r: 1, g: 1, b: 1, a: 0}
+          power: {r: 1, g: 1, b: 1, a: -0.20608899}
           offset: {r: 1, g: 1, b: 1, a: 0}
         linear:
           lift: {r: 1, g: 1, b: 1, a: 0}
@@ -276,22 +276,22 @@ MonoBehaviour:
         e_CurveG: 0
         e_CurveB: 0
   userLut:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
-      lut: {fileID: 0}
-      contribution: 1
+      lut: {fileID: 2800000, guid: 0d260fcfc6f974c4aa2c29eb164a726c, type: 3}
+      contribution: 0
   chromaticAberration:
     m_Enabled: 1
     m_Settings:
       spectralTexture: {fileID: 0}
-      intensity: 0.104
+      intensity: 0.105
   grain:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       colored: 1
-      intensity: 0.053
-      size: 0.55
-      luminanceContribution: 0.032
+      intensity: 0.096
+      size: 0.42
+      luminanceContribution: 0
   vignette:
     m_Enabled: 1
     m_Settings:
