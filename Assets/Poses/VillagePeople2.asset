@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
   m_Name: VillagePeople2
   m_EditorClassIdentifier: 
-  leftHand: {x: -0.35, y: 5.55}
-  leftElbow: {x: -3.81, y: 6.03}
-  rightHand: {x: 2.08, y: 5.25}
+  leftHand: {x: -2.42, y: 6.84}
+  leftElbow: {x: -5.23, y: 4.96}
+  rightHand: {x: 2.89, y: 7.51}
   rightElbow: {x: 5.31, y: 5.14}
   leftFoot: {x: -1.31, y: -15.68}
   leftKnee: {x: -1.2, y: -10.88}
@@ -23,9 +23,9 @@ MonoBehaviour:
   midChest: 1.55
   pelvis: -4
   rotation: 0
-  leftForearm: 3.4931362
-  leftArm: 4.831822
-  rightForearm: 3.2318726
+  leftForearm: 3.3809023
+  leftArm: 4.696914
+  rightForearm: 3.387226
   rightArm: 4.8830523
   leftShin: 4.8012605
   leftThigh: 6.8829064

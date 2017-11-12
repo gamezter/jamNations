@@ -13,21 +13,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftHand: {x: -4.3, y: 3.33}
   leftElbow: {x: -6.4, y: 0.55}
-  rightHand: {x: 1.8, y: -2.36}
+  rightHand: {x: 4.06, y: -5.54}
   rightElbow: {x: 5.11, y: -2.21}
   leftFoot: {x: -3.27, y: -14.1}
   leftKnee: {x: -2.44, y: -9.33}
-  rightFoot: {x: 4.72, y: -8.21}
-  rightKnee: {x: 7.08, y: -4.02}
+  rightFoot: {x: 6.18, y: -12.32}
+  rightKnee: {x: 7.05, y: -7.52}
   poseName: '"..nam.."'
   midChest: 1.55
   pelvis: -4
   rotation: 0
   leftForearm: 3.4840205
   leftArm: 4.5122056
-  rightForearm: 3.3133972
+  rightForearm: 3.4916184
   rightArm: 4.8795185
   leftShin: 4.841674
   leftThigh: 5.5210958
-  RightShin: 4.808919
-  RightThigh: 6.080033
+  RightShin: 4.8782063
+  RightThigh: 6.999493
