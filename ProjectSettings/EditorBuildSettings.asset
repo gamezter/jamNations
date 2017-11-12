@@ -11,9 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/ArtScene.unity
     guid: a32f5f2d0c84a1543a1d75b189e690d0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/AlexScene.unity
     guid: b71270c8e9efcea45b3f2c14832249be
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/alexCscene.unity
     guid: f50d80f6497fc4f44a12e3ed82e7aa6b

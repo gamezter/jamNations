@@ -11,11 +11,17 @@ public class Timer : MonoBehaviour {
     public float maxDistance;
     public float score;
     public Text MoveName;
+    private float TotalScore = 0;
 
     public GameObject[] bubbles;
 
     public float minY;
     public float maxY;
+
+    public Animator foule1;
+    public Animator foule2;
+    public Animator foule3;
+    private int lives = 3;
 
     public GameObject parent;
     public GameObject leftHandTarget;
@@ -28,14 +34,28 @@ public class Timer : MonoBehaviour {
     public GameObject rightFootTarget;
 
     private int currentIndex;
-
     private int currentBubbleIndex = 0;
 
     float delay;
 
 	// Use this for initialization
 	void Start () {
+        delay = stagedelay;
         currentIndex = Random.Range(0, poses.Length - 1);
+        for(int i = 0; i < bubbles.Length; i++)
+        {
+            bubbles[i].SetActive(false);
+        }
+
+        bubbles[currentBubbleIndex].SetActive(true);
+        Vector3 fromCamera = bubbles[currentBubbleIndex].transform.position - Camera.main.transform.position;
+        poseDisplay.transform.position = bubbles[currentBubbleIndex].transform.position + new Vector3(0, 7, 0) + fromCamera.normalized * 90;
+
+        Vector3 pos = bubbles[currentBubbleIndex].transform.GetChild(0).transform.localPosition;
+        bubbles[currentBubbleIndex].transform.GetChild(0).transform.localPosition = new Vector3(pos.x, maxY, pos.z);
+
+        poseDisplay.UpdateDisplay(poses[currentIndex]);
+        MoveName.text = poses[currentIndex].poseName;
     }
 	
 	// Update is called once per frame
@@ -76,6 +96,49 @@ public class Timer : MonoBehaviour {
             score += Mathf.Max(100 - (rightFoot - rightFootTarget.transform.position + parent.transform.position).magnitude * 100 / maxDistance, 0.0f);
 
             score /= 8;
+            TotalScore += score;
+
+            if(score < 50)
+            {
+                switch (lives)
+                {
+                    case 3:
+                        foule3.SetBool("Leave", true);
+                        foule3.speed = 1;
+                        lives--;
+                        break;
+                    case 2:
+                        foule2.SetBool("Leave", true);
+                        foule2.speed = 1;
+                        lives--;
+                        break;
+                    case 1:
+                        foule1.SetBool("Leave", true);
+                        foule1.speed = 1;
+                        lives--;
+                        break;
+                    case 0:
+                        PlayerPrefs.SetFloat("Score", TotalScore);
+                        //GAME OVER
+                        break;
+                }
+            }
+            else if(score > 90)
+            {
+                switch (lives)
+                {
+                    case 2:
+                        foule2.SetBool("Leave", false);
+                        foule2.speed = -1;
+                        lives++;
+                        break;
+                    case 1:
+                        foule1.SetBool("Leave", false);
+                        foule1.speed = -1;
+                        lives++;
+                        break;
+                }
+            }
 
             currentIndex = currentIndex == poses.Length - 1 ? 0 : currentIndex + 1;
 
