@@ -131,9 +131,17 @@ public class Timer : MonoBehaviour {
             {
                 switch (lives)
                 {
-                    case 2:
+					case 3:
+						foule1.SetBool("Happy", true);
+						foule2.SetBool("Happy", true);
+						foule3.SetBool("Happy", true);
+						break;
+					case 2:
                         foule2.SetBool("Leave", false);
-                        foule2.speed = -1;
+						foule1.SetBool("Happy", true);
+						//foule1.SetBool("")
+
+						foule2.speed = -1;
                         lives++;
                         break;
                     case 1:
@@ -142,7 +150,10 @@ public class Timer : MonoBehaviour {
                         lives++;
                         break;
                 }
-            }
+				foule1.SetBool("Happy", false);
+				foule2.SetBool("Happy", false);
+				foule3.SetBool("Happy", false);
+			}
 
             currentIndex = currentIndex == poses.Length - 1 ? 0 : currentIndex + 1;
 
