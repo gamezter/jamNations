@@ -7,50 +7,31 @@ public class Copter : MonoBehaviour {
 	public float timerBeforeResurect = 5;
 	public MeshRenderer myParent;
 	public Helicopter myHelicopter;
-	void OnCollisionEnter(Collision other)
-	{
-		Debug.Log("Je touche un autre object");
-		if (other.gameObject.CompareTag("copter"))
-		{
-			Debug.Log("Je touche un autre copter");
-			turnOff();
-		}
-	}
 
 	void OnTriggerEnter(Collider other)
 	{
-		//Debug.Log("Je touche un autre object");
 		if (other.gameObject.CompareTag("copter"))
 		{
-			if(other.gameObject.transform.parent != this.transform.parent)
+			if(other.gameObject.transform.parent != transform.parent)
 			{
-				other.gameObject.GetComponent<MeshRenderer>().enabled = false;
-				turnOff();
-				other.gameObject.GetComponent<BoxCollider>().enabled = false;
+                Copter c = other.gameObject.GetComponent<Copter>();
+
+                other.gameObject.GetComponent<BoxCollider>().enabled = false;
 				GetComponent<BoxCollider>().enabled = false;
+
 				Invoke("Ressurect", timerBeforeResurect);
-				other.gameObject.GetComponent<Copter>().Invoke("Ressurect", timerBeforeResurect);
-				myHelicopter.isDead = true;
-				myParent.enabled = false;
-				other.gameObject.GetComponent<Copter>().myHelicopter.isDead = true;
-				other.gameObject.GetComponent<Copter>().myParent.enabled = false;
-			}
-		//	Debug.Log("Je touche un autre copter");
-			
+				c.Invoke("Ressurect", timerBeforeResurect);
+
+				myHelicopter.isDead = true;				
+				c.myHelicopter.isDead = true;
+                myParent.enabled = false;
+                c.myParent.enabled = false;
+			}	
 		}
 	}
-
-
-	public void turnOff()
-	{
-		GetComponent<MeshRenderer>().enabled = false;
-
-	}
-
 	public void Ressurect()
 	{
 		Invoke("RessurectCollider", timerBeforeResurect);
-		GetComponent<MeshRenderer>().enabled = true;
 		myHelicopter.isDead = false;
 		myParent.enabled = true;
 	}

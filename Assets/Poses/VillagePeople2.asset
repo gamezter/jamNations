@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
+  m_Name: VillagePeople2
+  m_EditorClassIdentifier: 
+  leftHand: {x: -0.35, y: 5.55}
+  leftElbow: {x: -3.81, y: 6.03}
+  rightHand: {x: 2.08, y: 5.25}
+  rightElbow: {x: 5.31, y: 5.14}
+  leftFoot: {x: -1.31, y: -15.68}
+  leftKnee: {x: -1.2, y: -10.88}
+  rightFoot: {x: 0.53, y: -15.66}
+  rightKnee: {x: 0.86, y: -10.84}
+  midChest: 1.55
+  pelvis: -4
+  rotation: 0
+  leftForearm: 3.4931362
+  leftArm: 4.831822
+  rightForearm: 3.2318726
+  rightArm: 4.8830523
+  leftShin: 4.8012605
+  leftThigh: 6.8829064
+  RightShin: 4.831283
+  RightThigh: 6.8414326

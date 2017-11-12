@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
+  m_Name: Elvis2
+  m_EditorClassIdentifier: 
+  leftHand: {x: 0.32, y: -4.25}
+  leftElbow: {x: -2.85, y: -2.89}
+  rightHand: {x: 8.39, y: -3.89}
+  rightElbow: {x: 5.75, y: -1.55}
+  leftFoot: {x: -5.22, y: -14.57}
+  leftKnee: {x: -2.31, y: -10.71}
+  rightFoot: {x: 4.3, y: -14.8}
+  rightKnee: {x: 1.46, y: -10.88}
+  midChest: 1.55
+  pelvis: -4
+  rotation: 0
+  leftForearm: 3.44942
+  leftArm: 4.5206304
+  rightForearm: 3.527776
+  rightArm: 4.8654394
+  leftShin: 4.8340144
+  leftThigh: 6.8366804
+  RightShin: 4.840661
+  RightThigh: 6.895361

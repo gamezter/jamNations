@@ -11,21 +11,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
   m_Name: Psy2
   m_EditorClassIdentifier: 
-  leftHand: {x: -4.3, y: 18.33}
-  leftElbow: {x: -6.4, y: 15.55}
-  rightHand: {x: 1.8, y: 12.64}
-  rightElbow: {x: 5.11, y: 12.79}
-  leftFoot: {x: -3.27, y: 0.9}
-  leftKnee: {x: -2.44, y: 5.67}
-  rightFoot: {x: 4.72, y: 7.15}
-  rightKnee: {x: 7.74, y: 10.98}
-  midChest: 16.55
-  pelvis: 12.41
+  leftHand: {x: -4.3, y: 3.33}
+  leftElbow: {x: -6.4, y: 0.55}
+  rightHand: {x: 1.8, y: -2.36}
+  rightElbow: {x: 5.11, y: -2.21}
+  leftFoot: {x: -3.27, y: -14.1}
+  leftKnee: {x: -2.44, y: -9.33}
+  rightFoot: {x: 4.72, y: -8.21}
+  rightKnee: {x: 7.08, y: -4.02}
+  midChest: 1.55
+  pelvis: -4
+  rotation: 0
   leftForearm: 3.4840205
   leftArm: 4.5122056
   rightForearm: 3.3133972
-  rightArm: 4.879518
-  leftShin: 4.8416734
-  leftThigh: 6.8921113
-  RightShin: 4.877427
-  RightThigh: 6.890029
+  rightArm: 4.8795185
+  leftShin: 4.841674
+  leftThigh: 5.5210958
+  RightShin: 4.808919
+  RightThigh: 6.080033
