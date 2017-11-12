@@ -94,7 +94,7 @@ MonoBehaviour:
       adaptationType: 0
       speedUp: 2
       speedDown: 1
-      logMin: -8
+      logMin: -16
       logMax: 4
   bloom:
     m_Enabled: 1
@@ -113,12 +113,12 @@ MonoBehaviour:
     m_Settings:
       tonemapping:
         tonemapper: 2
-        neutralBlackIn: 0.0149
+        neutralBlackIn: 0.057
         neutralWhiteIn: 8.86
         neutralBlackOut: 0.0081
         neutralWhiteOut: 6.99
         neutralWhiteLevel: 2.18
-        neutralWhiteClip: 10
+        neutralWhiteClip: 6.3
       basic:
         postExposure: 0
         temperature: 0.8
