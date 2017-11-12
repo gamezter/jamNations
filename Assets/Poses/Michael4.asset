@@ -11,21 +11,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
   m_Name: Michael4
   m_EditorClassIdentifier: 
-  leftHand: {x: 0.9, y: 19.5}
-  leftElbow: {x: 2.5, y: 16.47}
-  rightHand: {x: 1, y: 8.49}
-  rightElbow: {x: 1, y: 11.81}
-  leftFoot: {x: 1.29, y: 2.11}
-  leftKnee: {x: 2.32, y: 6.42}
-  rightFoot: {x: -0.45, y: 0.81}
-  rightKnee: {x: 0.06, y: 5.62}
-  midChest: 16.55
-  pelvis: 11
-  leftForearm: 3.4265003
+  leftHand: {x: 0.9, y: 4.5}
+  leftElbow: {x: 2.5, y: 1.47}
+  rightHand: {x: 1, y: -6.51}
+  rightElbow: {x: 1, y: -3.19}
+  leftFoot: {x: 1.29, y: -12.89}
+  leftKnee: {x: 2.32, y: -8.58}
+  rightFoot: {x: -0.45, y: -14.19}
+  rightKnee: {x: 0.06, y: -9.38}
+  midChest: 1.55
+  pelvis: -4
+  rotation: 0
+  leftForearm: 3.4264996
   leftArm: 4.500711
-  rightForearm: 3.3200006
-  rightArm: 4.8443356
+  rightForearm: 3.3200002
+  rightArm: 4.8443365
   leftShin: 4.431366
   leftThigh: 5.656748
-  RightShin: 4.8369617
+  RightShin: 4.8369613
   RightThigh: 5.4615016

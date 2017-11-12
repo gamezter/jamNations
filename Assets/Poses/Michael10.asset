@@ -11,21 +11,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
   m_Name: Michael10
   m_EditorClassIdentifier: 
-  leftHand: {x: -3.5, y: 19.62}
-  leftElbow: {x: -6.4, y: 17.86}
-  rightHand: {x: 10.06, y: 18.49}
-  rightElbow: {x: 6.8, y: 17.64}
-  leftFoot: {x: 1.85, y: 1.04}
-  leftKnee: {x: 0.61, y: 5.72}
-  rightFoot: {x: 2.57, y: 0.89}
-  rightKnee: {x: 2.07, y: 5.68}
-  midChest: 16.55
-  pelvis: 12.41
-  leftForearmLength: 3.3922856
-  leftArmLength: 4.590872
-  rightForearmLength: 3.3689914
-  rightArmLength: 4.922205
-  leftShinLength: 4.8414874
-  leftThighLength: 6.881003
-  RightShinLength: 4.8160253
-  RightThighLength: 6.8145285
+  leftHand: {x: -3.5, y: 4.62}
+  leftElbow: {x: -6.4, y: 2.86}
+  rightHand: {x: 10.06, y: 3.49}
+  rightElbow: {x: 6.8, y: 2.64}
+  leftFoot: {x: 1.85, y: -13.96}
+  leftKnee: {x: 0.61, y: -9.28}
+  rightFoot: {x: 2.57, y: -14.11}
+  rightKnee: {x: 2.07, y: -9.32}
+  midChest: 1.55
+  pelvis: -4
+  rotation: 0
+  leftForearm: 3.3922856
+  leftArm: 4.5908713
+  rightForearm: 3.3689911
+  rightArm: 4.922205
+  leftShin: 4.8414874
+  leftThigh: 5.5200086
+  RightShin: 4.8160253
+  RightThigh: 5.426536
