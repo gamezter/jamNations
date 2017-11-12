@@ -28,8 +28,8 @@ public class Helicopter : MonoBehaviour {
         lr = gameObject.AddComponent<LineRenderer>();
         lr.sharedMaterial = chainMaterial;
         lr.positionCount = chainLength * 2 + 2;
-        lr.startWidth = 0.2f;
-        lr.endWidth = 0.2f;
+        lr.startWidth = 0.5f;
+        lr.endWidth = 0.5f;
         BuildChain();
         Plane[] planes = GeometryUtility.CalculateFrustumPlanes(Camera.main);
         float d;
@@ -55,8 +55,6 @@ public class Helicopter : MonoBehaviour {
         if (newPos.y > topY) newPos.y = topY;
         if (newPos.y < bottomY) newPos.y = bottomY;
         transform.position = newPos;
-
-
 
         lr.SetPosition(0, links[0].transform.position + links[0].transform.up * 1.5f);
 
