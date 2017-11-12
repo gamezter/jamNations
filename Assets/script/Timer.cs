@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour {
 
-    public int stagedelay;
+    public float stagedelay;
     public PoseDisplay poseDisplay;
     public Pose[] poses;
     public float maxDistance;
@@ -70,6 +70,7 @@ public class Timer : MonoBehaviour {
         if (delay < 0)
         {
             //times up
+            if (stagedelay > 3.0) stagedelay -= 0.5f;
             delay = stagedelay;
 
             score = 0;
