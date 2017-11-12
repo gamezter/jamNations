@@ -13,6 +13,7 @@ public class CreditMenu : MonoBehaviour {
 	void Start () {
 		Invoke("RestartGame", 10f);
 		float tempF = PlayerPrefs.GetFloat("Score");
+		tempF = Mathf.Floor(tempF);
 		texto = "Your awesome score is " + tempF.ToString();
 		//texto += PlayerPrefs.GetFloat("Score").ToString;
 		theScore.text = texto;

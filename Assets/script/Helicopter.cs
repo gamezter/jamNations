@@ -17,6 +17,7 @@ public class Helicopter : MonoBehaviour {
     private LineRenderer lr;
 	public bool isDead;
 
+
     float topY;
     float bottomY;
     float leftX;

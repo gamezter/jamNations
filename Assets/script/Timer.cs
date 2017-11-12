@@ -102,6 +102,7 @@ public class Timer : MonoBehaviour {
 
             if(score < 50)
             {
+				Debug.Log("je suis poche jai pas un bon score");
                 switch (lives)
                 {
                     case 3:
