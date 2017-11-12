@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -4.37, y: -8.57}
   rightFoot: {x: -0.7, y: -14.11}
   rightKnee: {x: -0.68, y: -9.27}
+  poseName: '"La prise du petit paquet"'
   midChest: 1.55
   pelvis: -4
   rotation: 0

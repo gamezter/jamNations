@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -2.31, y: -10.71}
   rightFoot: {x: 4.3, y: -14.8}
   rightKnee: {x: 1.46, y: -10.88}
+  poseName: '"The Crotch Grab"'
   midChest: 1.55
   pelvis: -4
   rotation: 0

@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -1.2, y: -10.88}
   rightFoot: {x: 2.71, y: -15.6}
   rightKnee: {x: 2.25, y: -10.76}
+  poseName: '"The Flag"'
   midChest: 1.55
   pelvis: -4
   rotation: 8.23

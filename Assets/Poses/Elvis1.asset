@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -3.6, y: -10.29}
   rightFoot: {x: 3.85, y: -14.8}
   rightKnee: {x: 4.25, y: -10.01}
+  poseName: '"Boogie Nights"'
   midChest: 1.55
   pelvis: -4
   rotation: 0

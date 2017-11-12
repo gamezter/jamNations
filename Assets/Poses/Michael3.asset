@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -2.8, y: -9.22}
   rightFoot: {x: 5.32, y: -13.47}
   rightKnee: {x: 3.33, y: -9.03}
+  poseName: '"La Celine"'
   midChest: 1.55
   pelvis: -4
   rotation: 0

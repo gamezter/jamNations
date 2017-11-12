@@ -19,6 +19,7 @@ MonoBehaviour:
   leftKnee: {x: -0.14, y: -9.22}
   rightFoot: {x: -0.75, y: -14.05}
   rightKnee: {x: -0.1, y: -9.34}
+  poseName: '"The Shamon"'
   midChest: 1.55
   pelvis: -4
   rotation: 0
