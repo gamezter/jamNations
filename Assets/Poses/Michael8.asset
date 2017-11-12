@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftHand: {x: -3.9, y: -6.22}
   leftElbow: {x: -2.9, y: -2.88}
-  rightHand: {x: -1.16, y: -5.5}
-  rightElbow: {x: 1.35, y: -3.24}
+  rightHand: {x: 5.83, y: -5.5}
+  rightElbow: {x: 3.3, y: -3.24}
   leftFoot: {x: -1.87, y: -13.6}
   leftKnee: {x: 0.35, y: -9.32}
   rightFoot: {x: 0.59, y: -13.95}
@@ -25,8 +25,8 @@ MonoBehaviour:
   rotation: 0
   leftForearm: 3.4864879
   leftArm: 4.520498
-  rightForearm: 3.3775287
-  rightArm: 4.833901
+  rightForearm: 3.3924181
+  rightArm: 4.963275
   leftShin: 4.821494
   leftThigh: 5.488615
   RightShin: 4.861409

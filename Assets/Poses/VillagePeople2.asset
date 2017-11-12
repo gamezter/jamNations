@@ -15,9 +15,9 @@ MonoBehaviour:
   leftElbow: {x: -5.23, y: 4.96}
   rightHand: {x: 2.89, y: 7.51}
   rightElbow: {x: 5.31, y: 5.14}
-  leftFoot: {x: -1.31, y: -15.68}
+  leftFoot: {x: -3.4, y: -15}
   leftKnee: {x: -1.2, y: -10.88}
-  rightFoot: {x: 0.53, y: -15.66}
+  rightFoot: {x: 3.24, y: -14.96}
   rightKnee: {x: 0.86, y: -10.84}
   poseName: '"The M"'
   midChest: 1.55
@@ -27,7 +27,7 @@ MonoBehaviour:
   leftArm: 4.696914
   rightForearm: 3.387226
   rightArm: 4.8830523
-  leftShin: 4.8012605
+  leftShin: 4.670589
   leftThigh: 6.8829064
-  RightShin: 4.831283
+  RightShin: 4.7580247
   RightThigh: 6.8414326
