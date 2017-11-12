@@ -16,6 +16,12 @@ public class Helicopter : MonoBehaviour {
     private List<GameObject> links;
     private LineRenderer lr;
 	public bool isDead;
+
+    float topY;
+    float bottomY;
+    float leftX;
+    float rightX;
+
 	// Use this for initialization
 	void Start () {
         links = new List<GameObject>();
@@ -25,16 +31,32 @@ public class Helicopter : MonoBehaviour {
         lr.startWidth = 0.2f;
         lr.endWidth = 0.2f;
         BuildChain();
+        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(Camera.main);
+        float d;
+        planes[0].Raycast(new Ray(transform.position, new Vector3(-1, 0, 0)), out d);
+        leftX = transform.position.x - d;
+        planes[1].Raycast(new Ray(transform.position, new Vector3(1, 0, 0)), out d);
+        rightX = transform.position.x + d;
+        planes[2].Raycast(new Ray(transform.position, new Vector3(0, -1, 0)), out d);
+        bottomY = transform.position.y - d;
+        planes[3].Raycast(new Ray(transform.position, new Vector3(0, 1, 0)), out d);
+        topY = transform.position.y + d;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (!isDead)
-		{
-				
+        if (isDead) return;
+	
         float x = Input.GetAxis(axis + "H") * 0.1f;
         float y = Input.GetAxis(axis + "V") * 0.1f;
-        transform.position += new Vector3(x, y, 0);
+        Vector3 newPos = transform.position + new Vector3(x, y, 0);
+        if (newPos.x < leftX) newPos.x = leftX;
+        if (newPos.x > rightX) newPos.x = rightX;
+        if (newPos.y > topY) newPos.y = topY;
+        if (newPos.y < bottomY) newPos.y = bottomY;
+        transform.position = newPos;
+
+
 
         lr.SetPosition(0, links[0].transform.position + links[0].transform.up * 1.5f);
 
@@ -54,7 +76,6 @@ public class Helicopter : MonoBehaviour {
         lr.SetPosition(chainLength * 2, p0 * 0.33f + p1 * 0.66f);
 
         lr.SetPosition(chainLength * 2 + 1, links[links.Count - 1].transform.position - links[links.Count - 1].transform.up * 1.5f);
-		}
 	}
 
 	void BuildChain()
