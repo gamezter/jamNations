@@ -72,6 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4284252187841232}
   - component: {fileID: 114966334894269482}
+  - component: {fileID: 82160344541156524}
   m_Layer: 0
   m_Name: Timer
   m_TagString: Untagged
@@ -443,6 +444,87 @@ AudioListener:
   m_GameObject: {fileID: 1060451609877608}
   m_Enabled: 1
   m_ExtensionPropertyValues: []
+--- !u!82 &82160344541156524
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1348292265417712}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4d1c13bc4dc0a3a4c8ad69ded5ce7d0c, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  m_ExtensionPropertyValues: []
 --- !u!95 &95198422935363988
 Animator:
   serializedVersion: 3
@@ -574,11 +656,6 @@ MonoBehaviour:
   stagedelay: 20
   poseDisplay: {fileID: 0}
   poses:
-  - {fileID: 11400000, guid: 76535da1718018240aab55baac40c501, type: 2}
-  - {fileID: 11400000, guid: faa8328a3224a6a46aa574f1381aa670, type: 2}
-  - {fileID: 11400000, guid: c4c33ed4aefefb54aa8a045ceadea539, type: 2}
-  - {fileID: 11400000, guid: 95e9760504b8dbe42a6e425f6aa713a7, type: 2}
-  - {fileID: 11400000, guid: fe23139cbb64ae243b0718ec51ceea57, type: 2}
   - {fileID: 11400000, guid: b10a6e13060168146bcc04dbd9c33db8, type: 2}
   - {fileID: 11400000, guid: 9e6a45e304a7a3d429ac8e8cedb8c6a5, type: 2}
   - {fileID: 11400000, guid: 97862fcc8a7c8a24eb82801e36a89dc7, type: 2}
@@ -618,6 +695,8 @@ MonoBehaviour:
   leftFootTarget: {fileID: 0}
   rightKneeTarget: {fileID: 0}
   rightFootTarget: {fileID: 0}
+  myRadio: {fileID: 82160344541156524}
+  winningClip: {fileID: 8300000, guid: 4d1c13bc4dc0a3a4c8ad69ded5ce7d0c, type: 3}
 --- !u!124 &124076968916828632
 Behaviour:
   m_ObjectHideFlags: 1
