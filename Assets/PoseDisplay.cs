@@ -17,7 +17,7 @@ public class PoseDisplay : MonoBehaviour {
     LineRenderer Head;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         GameObject leftA = new GameObject("Left arm");
         leftA.transform.parent = transform;
         leftA.layer = LayerMask.NameToLayer("UI");
