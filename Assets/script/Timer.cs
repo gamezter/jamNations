@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour {
@@ -120,6 +121,7 @@ public class Timer : MonoBehaviour {
                         break;
                     case 0:
                         PlayerPrefs.SetFloat("Score", TotalScore);
+						SceneManager.LoadScene(2);
                         //GAME OVER
                         break;
                 }
