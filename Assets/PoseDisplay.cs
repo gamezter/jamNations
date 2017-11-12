@@ -75,14 +75,20 @@ public class PoseDisplay : MonoBehaviour {
 
     public void UpdateDisplay(Pose p)
     {
-        leftArm.SetPositions(new[] { new Vector3(p.leftHand.x, p.leftHand.y, depth), new Vector3(p.leftElbow.x, p.leftElbow.y, depth), new Vector3(-2, p.midChest, depth), new Vector3(0, p.midChest, depth) });
+        Vector3 o = transform.position;
 
-        rightArm.SetPositions(new[] { new Vector3(p.rightHand.x, p.rightHand.y, depth), new Vector3(p.rightElbow.x, p.rightElbow.y, depth), new Vector3(2, p.midChest, depth), new Vector3(0, p.midChest, depth) });
+        float s = Mathf.Sin(p.rotation);
+        float c = Mathf.Cos(p.rotation);
 
-        leftLeg.SetPositions(new[] { new Vector3(p.leftFoot.x, p.leftFoot.y, depth), new Vector3(p.leftKnee.x, p.leftKnee.y, depth), new Vector3(0, p.pelvis, depth) });
 
-        rightLeg.SetPositions(new[] { new Vector3(p.rightFoot.x, p.rightFoot.y, depth), new Vector3(p.rightKnee.x, p.rightKnee.y, depth), new Vector3(0, p.pelvis, depth) });
+        leftArm.SetPositions(new[] { o + new Vector3(p.leftHand.x * c - p.leftHand.y * s, p.leftHand.y * c + p.leftHand.x * s, 0), o + new Vector3(p.leftElbow.x * c - p.leftElbow.y * s, p.leftElbow.y * c + p.leftElbow.x * s, 0), o + new Vector3(-2 * c - p.midChest * s, p.midChest * c - 2 * s, 0), o + new Vector3( -p.midChest * s, p.midChest * c, 0) });
 
-        Body.SetPositions(new[] { new Vector3(0, p.pelvis, depth), new Vector3(0, p.midChest, depth) });
+        rightArm.SetPositions(new[] { o + new Vector3(p.rightHand.x * c - p.rightHand.y * s, p.rightHand.y * c + p.rightHand.x * s, 0), o + new Vector3(p.rightElbow.x * c - p.rightElbow.x * s, p.rightElbow.y * c + p.rightElbow.x * s, 0), o + new Vector3(2 * c - p.midChest * s, p.midChest * c + 2 * s, 0), o + new Vector3(-p.midChest * s, p.midChest * c, 0) });
+
+        leftLeg.SetPositions(new[] { o + new Vector3(p.leftFoot.x * c - p.leftFoot.y * s, p.leftFoot.y * c + p.leftFoot.x * s, 0), o + new Vector3(p.leftKnee.x * c - p.leftKnee.y * s, p.leftKnee.y * c + p.leftKnee.x * s, 0), o + new Vector3(-p.pelvis * s, p.pelvis * c, 0) });
+
+        rightLeg.SetPositions(new[] { o + new Vector3(p.rightFoot.x * c - p.rightFoot.y * s, p.rightFoot.y, 0), o + new Vector3(p.rightKnee.x * c - p.rightKnee.y * s, p.rightKnee.y, 0), o + new Vector3(-p.pelvis * s, p.pelvis * c, 0) });
+
+        Body.SetPositions(new[] { o + new Vector3(-p.pelvis * s, p.pelvis * c, 0), o + new Vector3(-p.midChest * s, p.midChest * c, 0) });
     }
 }

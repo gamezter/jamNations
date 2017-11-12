@@ -17,6 +17,8 @@ public class Pose : ScriptableObject {
     public float midChest;
     public float pelvis;
 
+    public float rotation;
+
     [Header("Bone Lengths")]
     public float leftForearm;
     public float leftArm;

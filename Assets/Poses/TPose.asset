@@ -11,21 +11,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
   m_Name: TPose
   m_EditorClassIdentifier: 
-  leftHand: {x: -5.64, y: 9.41}
-  leftElbow: {x: -4.09, y: 12.47}
-  rightHand: {x: 5.45, y: 9.18}
-  rightElbow: {x: 4.07, y: 12.17}
-  leftFoot: {x: -0.81, y: 0.72}
-  leftKnee: {x: -0.83, y: 5.53}
-  rightFoot: {x: 0.91, y: 0.72}
-  rightKnee: {x: 0.94, y: 5.57}
-  midChest: 16.55
-  pelvis: 11
-  leftForearm: 3.4301753
-  leftArm: 4.5841565
-  rightForearm: 3.2930984
-  rightArm: 4.8445115
-  leftShin: 4.810042
-  leftThigh: 5.472641
-  RightShin: 4.850093
-  RightThigh: 5.430331
+  leftHand: {x: -5.64, y: -5.59}
+  leftElbow: {x: -4.09, y: -2.53}
+  rightHand: {x: 5.45, y: -5.82}
+  rightElbow: {x: 4.07, y: -2.83}
+  leftFoot: {x: -0.81, y: -14.28}
+  leftKnee: {x: -0.83, y: -9.47}
+  rightFoot: {x: 0.91, y: -14.28}
+  rightKnee: {x: 0.94, y: -9.43}
+  midChest: 1.55
+  pelvis: -4
+  rotation: 0
+  leftForearm: 3.4301748
+  leftArm: 4.5841575
+  rightForearm: 3.293099
+  rightArm: 4.8445125
+  leftShin: 4.810041
+  leftThigh: 5.4726415
+  RightShin: 4.850092
+  RightThigh: 5.4303317
