@@ -36,7 +36,8 @@ public class Timer : MonoBehaviour {
 
     private int currentIndex;
     private int currentBubbleIndex = 0;
-
+	public AudioSource myRadio;
+	public AudioClip winningClip;
     float delay;
 
 	// Use this for initialization
@@ -127,8 +128,9 @@ public class Timer : MonoBehaviour {
                         break;
                 }
             }
-            else if(score > 90)
+            else if(score > 60)
             {
+				myRadio.Play();
                 switch (lives)
                 {
 					case 3:
