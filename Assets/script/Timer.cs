@@ -6,11 +6,16 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour {
 
     public int stagedelay;
-    public Text DelayText;
     public PoseDisplay poseDisplay;
     public Pose[] poses;
     public float maxDistance;
     public float score;
+    public Text MoveName;
+
+    public GameObject[] bubbles;
+
+    public float minY;
+    public float maxY;
 
     public GameObject parent;
     public GameObject leftHandTarget;
@@ -24,21 +29,25 @@ public class Timer : MonoBehaviour {
 
     private int currentIndex;
 
+    private int currentBubbleIndex = 0;
+
     float delay;
 
 	// Use this for initialization
 	void Start () {
-        delay = stagedelay;
         currentIndex = Random.Range(0, poses.Length - 1);
-        poseDisplay.UpdateDisplay(poses[currentIndex]);
     }
 	
 	// Update is called once per frame
 	void Update () {
         delay -= Time.deltaTime;
-        DelayText.text = "Time remaining: " + Mathf.Floor(delay).ToString();
 
-        if(delay < 0)
+        float value = Mathf.Lerp(minY, maxY, delay / stagedelay);
+
+        Vector3 pos = bubbles[currentBubbleIndex].transform.GetChild(0).transform.localPosition;
+        bubbles[currentBubbleIndex].transform.GetChild(0).transform.localPosition = new Vector3(pos.x, value, pos.z);
+
+        if (delay < 0)
         {
             //times up
             delay = stagedelay;
@@ -69,7 +78,18 @@ public class Timer : MonoBehaviour {
             score /= 8;
 
             currentIndex = currentIndex == poses.Length - 1 ? 0 : currentIndex + 1;
+
+            bubbles[currentBubbleIndex].SetActive(false);
+            currentBubbleIndex = currentBubbleIndex == bubbles.Length - 1 ? 0 : currentBubbleIndex + 1;
+            bubbles[currentBubbleIndex].SetActive(true);
+            Vector3 fromCamera = bubbles[currentBubbleIndex].transform.position - Camera.main.transform.position;
+            poseDisplay.transform.position = bubbles[currentBubbleIndex].transform.position + new Vector3(0,7,0) + fromCamera.normalized * 90;
+
+            pos = bubbles[currentBubbleIndex].transform.GetChild(0).transform.localPosition;
+            bubbles[currentBubbleIndex].transform.GetChild(0).transform.localPosition = new Vector3(pos.x, maxY, pos.z);
+
             poseDisplay.UpdateDisplay(poses[currentIndex]);
+            MoveName.text = poses[currentIndex].poseName;
         }
 	}
 }
