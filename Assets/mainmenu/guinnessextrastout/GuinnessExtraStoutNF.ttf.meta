@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ba80d849166dbd5489aa42057a52d833
+timeCreated: 1510462012
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Guinness Extra Stout NF
+  fontNames:
+  - Guinness Extra Stout NF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 40f5b74810d9649409ac9ff21ee9358f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

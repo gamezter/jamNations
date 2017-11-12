@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: f602f39df61be8c459ed9c4acdb3b9a3
+timeCreated: 1510462012
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Old Gate Lane NF
+  fontNames:
+  - Old Gate Lane NF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 23e76e80ed576a54cb81ad2d38250469, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
