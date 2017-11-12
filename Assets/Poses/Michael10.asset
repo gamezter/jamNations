@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4097e1a700c1254894e02e0ebbdaffa, type: 3}
   m_Name: Michael10
   m_EditorClassIdentifier: 
-  leftHand: {x: -3.5, y: 4.62}
+  leftHand: {x: -6.36, y: 6.27}
   leftElbow: {x: -6.4, y: 2.86}
   rightHand: {x: 10.06, y: 3.49}
   rightElbow: {x: 6.8, y: 2.64}
@@ -23,7 +23,7 @@ MonoBehaviour:
   midChest: 1.55
   pelvis: -4
   rotation: 0
-  leftForearm: 3.3922856
+  leftForearm: 3.4102347
   leftArm: 4.5908713
   rightForearm: 3.3689911
   rightArm: 4.922205

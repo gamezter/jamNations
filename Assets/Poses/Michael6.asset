@@ -17,8 +17,8 @@ MonoBehaviour:
   rightElbow: {x: 1.4, y: -3.47}
   leftFoot: {x: -1.28, y: -14.14}
   leftKnee: {x: -0.19, y: -9.45}
-  rightFoot: {x: 3.14, y: -13.92}
-  rightKnee: {x: 3.01, y: -9.06}
+  rightFoot: {x: 8.61, y: -12.92}
+  rightKnee: {x: 5.73, y: -9.06}
   poseName: '"The Toreador"'
   midChest: 1.55
   pelvis: -4
@@ -29,5 +29,5 @@ MonoBehaviour:
   rightArm: 5.0557294
   leftShin: 4.8149977
   leftThigh: 5.509864
-  RightShin: 4.861738
-  RightThigh: 5.444603
+  RightShin: 4.8160143
+  RightThigh: 6.9265075
