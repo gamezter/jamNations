@@ -39,7 +39,8 @@ public class Timer : MonoBehaviour {
 	public AudioSource myRadio;
 	public AudioClip winningClip;
     float delay;
-
+	public GameObject[] fireFoxPosition;
+	public ParticleSystem theFireFox;
 	// Use this for initialization
 	void Start () {
         delay = stagedelay;
@@ -100,11 +101,11 @@ public class Timer : MonoBehaviour {
 
             score /= 4;
             TotalScore += score;
-            Debug.Log("Score :" + score.ToString());
+           // Debug.Log("Score :" + score.ToString());
            // Debug.Log("je suis poche jai pas un bon score");
             if (score < 13)
             {
-				Debug.Log("je suis poche jai pas un bon score");
+			//	Debug.Log("je suis poche jai pas un bon score");
                 switch (lives)
                 {
                     case 3:
@@ -131,11 +132,14 @@ public class Timer : MonoBehaviour {
             }
             else/* if(score > 13)*/
             {
-                Debug.Log("On as eu du score");
+				foreach(GameObject gO in fireFoxPosition)
+				{
+					Instantiate(theFireFox, gO.transform.position, theFireFox.transform.rotation);
+				}
                 foule1.SetBool("Happy", true);
                 foule2.SetBool("Happy", true);
                 foule3.SetBool("Happy", true);
-                Debug.Log("juste apres les bool a on");
+                //Debug.Log("juste apres les bool a on");
                 myRadio.Play();
                 switch (lives)
                 {
